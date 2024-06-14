@@ -1,0 +1,142 @@
+.backdrop {
+  position: fixed;
+  z-index: 30;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  z-index: 10;
+  overflow: auto;
+  width: 260px;
+  padding: 15px;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal_desktop_menu {
+    display: none;
+  }
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    @include font(300, 24px);
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    span {
+      display: block;
+      @include font(300, 12px);
+      margin-bottom: 8px;
+    }
+    label {
+      display: block;
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 11px 14px;
+        border: 1px solid #a3aed0;
+        border-radius: 20px;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: space-between;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 22px;
+        border: 0;
+        border-radius: 20px;
+        color: white;
+        background-color: #a3aed0;
+      }
+      li:last-child button {
+        background: linear-gradient(to right, #70a9ff, #0149b4);
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    padding: 30px;
+    width: 290px;
+    .modal_desktop_menu {
+      display: block;
+      ul {
+        display: flex;
+        gap: 7px;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 19px;
+          box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+          padding: 6px 10px;
+          flex: 1;
+          min-height: 20px;
+          &:first-child {
+            background-color: #2e65f3;
+            color: white;
+          }
+          span {
+            margin: 0;
+          }
+          p {
+            margin: 0;
+            display: none;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          svg {
+            transform: rotate(0deg);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .rotate {
+            transform: rotate(180deg);
+          }
+          .visible {
+            display: block;
+          }
+        }
+      }
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      ul {
+        button {
+          padding: 10px 27px;
+        }
+        li:last-child button {
+          svg {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

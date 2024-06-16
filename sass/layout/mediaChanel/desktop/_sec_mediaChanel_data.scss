@@ -1,24 +1,24 @@
 .mediaChanel_data {
-  padding: 20px 0 60px 0;
+  padding: 20px 0 30px 0;
   ul {
     display: flex;
     gap: 20px;
     li {
       padding: 10px 34px;
-      background-color: #f1f4ff;
+      background-color: #0e1218;
       width: 100%;
       border-radius: 20px;
       &:first-child {
-        border-bottom: 5px solid #ff0000;
+        border-bottom: 5px solid #423efc;
       }
       &:nth-child(2) {
-        border-bottom: 5px solid #ffd600;
+        border-bottom: 5px solid #f6d423;
       }
       &:nth-child(3) {
-        border-bottom: 5px solid #0fb600;
+        border-bottom: 5px solid #7c57f4;
       }
       &:last-child {
-        border-bottom: 5px solid #9e00ff;
+        border-bottom: 5px solid #36393e;
       }
       h4 {
         margin: 0;

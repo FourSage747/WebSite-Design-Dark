@@ -6,11 +6,6 @@ header {
     align-items: center;
     padding-left: 30px;
     gap: 14px;
-    a {
-      padding: 7px;
-      border-radius: 50%;
-      background-color: white;
-    }
     h1 {
       margin: 0;
       @include font(400, 30px);

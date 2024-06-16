@@ -1,7 +1,13 @@
-body {
+body,
+html {
+  position: relative;
+  z-index: -1;
   margin: 0;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  background-color: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 ul {
@@ -12,6 +18,18 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+svg {
+  stroke: white;
+}
+
+.h2 {
+  background: linear-gradient(90deg, #e5f0ff 0%, #608bfe 53%, #2d29ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .container {
@@ -48,11 +66,6 @@ header .container {
   align-items: center;
   padding-left: 30px;
   gap: 14px;
-}
-header .container a {
-  padding: 7px;
-  border-radius: 50%;
-  background-color: white;
 }
 header .container h1 {
   margin: 0;
@@ -137,8 +150,7 @@ main .container form button {
   border-radius: 20px;
   padding: 10px 0;
   color: white;
-  background: linear-gradient(to right, #70a9ff, #0149b4);
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  background: #3334ff;
 }
 main .container form ul {
   display: flex;
@@ -152,10 +164,10 @@ main .container form ul li button {
   width: 100%;
 }
 main .container form ul li:first-child button {
-  background: #2e65f3;
+  background: #3334ff;
 }
 main .container form ul li:last-child button {
-  background: #124897;
+  background: #181a1e;
 }
 main .container form label span {
   display: block;
@@ -196,12 +208,6 @@ main .container form label input {
   }
   main .container form ul li button {
     text-align: start;
-  }
-  main .container form ul li:first-child button {
-    background: #2e65f3;
-  }
-  main .container form ul li:last-child button {
-    background: #124897;
   }
   main .container form label span {
     font-weight: 300;

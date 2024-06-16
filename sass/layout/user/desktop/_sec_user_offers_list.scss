@@ -5,7 +5,7 @@
   .user_offers_list_li {
     box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
-    background-color: #f1f4ff;
+    background-color: #181a1e;
     // &:first-child {
     //   background: linear-gradient(to bottom, #70a9ff, #0149b4);
     //   color: white;
@@ -15,33 +15,35 @@
       padding: 10px;
       display: flex;
       align-items: center;
-      li:first-child {
-        margin-right: 30px;
+      justify-content: space-between;
+      li:first-child,
+      li:last-child {
+        // margin-right: 30px;
         display: flex;
         align-items: center;
         gap: 10px;
       }
-      li:nth-child(2) {
-        margin-right: 50px;
-      }
-      li:nth-child(3) {
-        margin-right: 50px;
-      }
-      li:nth-child(4) {
-        margin-right: 80px;
-      }
-      li:nth-child(5) {
-        margin-right: 50px;
-      }
-      li:nth-child(6) {
-        margin-right: 20px;
-      }
-      li:nth-child(7) {
-        margin-right: 10px;
-      }
+      // li:nth-child(2) {
+      //   margin-right: 50px;
+      // }
+      // li:nth-child(3) {
+      //   margin-right: 50px;
+      // }
+      // li:nth-child(4) {
+      //   margin-right: 80px;
+      // }
+      // li:nth-child(5) {
+      //   margin-right: 50px;
+      // }
+      // li:nth-child(6) {
+      //   margin-right: 20px;
+      // }
+      // li:nth-child(7) {
+      //   margin-right: 10px;
+      // }
     }
     .user_offers_list_hidden_div {
-      background-color: #70a9ff;
+      background-color: #181a1e;
       border-radius: 0 0 20px 20px;
       overflow: hidden;
       opacity: 0;
@@ -59,7 +61,7 @@
         li {
           position: relative;
           padding: 10px;
-          background-color: #f1f4ff;
+          background-color: #0e1218;
           width: 180px;
           border-radius: 10px;
           b {
@@ -72,19 +74,19 @@
             right: 10px;
           }
           &:first-child {
-            border-bottom: 5px solid #ff0000;
+            border-bottom: 5px solid #423efc;
           }
           &:nth-child(2) {
-            border-bottom: 5px solid #ffd600;
+            border-bottom: 5px solid #f6d423;
           }
           &:nth-child(3) {
-            border-bottom: 5px solid #0fb600;
+            border-bottom: 5px solid #7c57f4;
           }
           &:nth-child(4) {
-            border-bottom: 5px solid #9e00ff;
+            border-bottom: 5px solid #36393e;
           }
           &:last-child {
-            border-bottom: 5px solid #144c9f;
+            border-bottom: 5px solid #ff7a00;
           }
         }
       }
@@ -92,19 +94,10 @@
     .user_offers_list_hidden_div_ul2 {
       margin: 10px 0;
       padding: 10px;
-      background-color: #f1f4ff;
+      background-color: #0e1218;
       border-radius: 20px;
-      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
       display: flex;
       justify-content: space-between;
-      li:nth-of-type(4) {
-        span {
-          padding: 5px 20px;
-          border-radius: 15px;
-          color: #2e65f3;
-          background-color: #d8e1ff;
-        }
-      }
       span {
         @include font(300, 12px);
       }
@@ -119,67 +112,8 @@
       li {
         @include font(300, 14px);
         padding: 10px 20px;
-        background-color: #f1f4ff;
+        background-color: #0e1218;
         border-radius: 10px;
-        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-      }
-    }
-  }
-}
-@media screen and (min-width: 1400px) {
-  .user_offers_list_ul {
-    .user_offers_list_li {
-      .user_offers_list_haracter {
-        li:first-child {
-          margin-right: 40px;
-        }
-        li:nth-child(2) {
-          margin-right: 60px;
-        }
-        li:nth-child(3) {
-          margin-right: 60px;
-        }
-        li:nth-child(4) {
-          margin-right: 90px;
-        }
-        li:nth-child(5) {
-          margin-right: 60px;
-        }
-        li:nth-child(6) {
-          margin-right: 30px;
-        }
-        li:nth-child(7) {
-          margin-right: 20px;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1500px) {
-  .user_offers_list_ul {
-    .user_offers_list_li {
-      .user_offers_list_haracter {
-        li:first-child {
-          margin-right: 60px;
-        }
-        li:nth-child(2) {
-          margin-right: 80px;
-        }
-        li:nth-child(3) {
-          margin-right: 80px;
-        }
-        li:nth-child(4) {
-          margin-right: 110px;
-        }
-        li:nth-child(5) {
-          margin-right: 80px;
-        }
-        li:nth-child(6) {
-          margin-right: 50px;
-        }
-        li:nth-child(7) {
-          margin-right: 40px;
-        }
       }
     }
   }

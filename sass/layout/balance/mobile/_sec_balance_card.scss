@@ -1,42 +1,93 @@
 .balance_card {
-  .balance_card_button {
+  h3 {
+    margin: 0;
+    margin-right: 6px;
+  }
+  .balance_addCard_ul {
+    margin: 20px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 13px 0;
     li {
-      padding: 8px 10px;
-      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-      &:nth-child(2) {
-        border-radius: 20px;
-        color: white;
-        background: linear-gradient(to right, #70a9ff, #0149b4);
-        button {
-          color: white;
-        }
-      }
-    }
-    button {
-      border: 0;
-      padding: 0;
-      background: transparent;
+      display: flex;
     }
   }
-  .balance_card_choise {
+  .choise-card {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 290px;
+    margin: auto;
     .card {
       color: white;
       padding: 20px;
-      border-radius: 20px;
-      background: linear-gradient(300deg, #bb6bd9, #0149b4);
+      border-radius: 10px;
+      background: linear-gradient(330deg, #8571b8, #051757);
+      &:first-child {
+        position: absolute;
+        height: 60%;
+        left: -78%;
+        li {
+          span {
+            @include font(400, 12px);
+          }
+          b {
+            @include font(400, 14px);
+          }
+          &:first-child {
+            margin-bottom: 18px;
+          }
+          &:nth-child(2) {
+            margin-bottom: 20px;
+            b {
+              @include font(400, 12px);
+            }
+          }
+          &:last-child {
+            b {
+              @include font(400, 12px);
+            }
+          }
+        }
+      }
+      &:last-child {
+        position: absolute;
+        height: 60%;
+        right: -78%;
+        li {
+          span {
+            @include font(400, 12px);
+          }
+          b {
+            @include font(400, 14px);
+          }
+          &:first-child {
+            margin-bottom: 18px;
+          }
+          &:nth-child(2) {
+            margin-bottom: 20px;
+            b {
+              @include font(400, 12px);
+            }
+          }
+          &:last-child {
+            b {
+              @include font(400, 12px);
+            }
+          }
+        }
+      }
       li {
         display: flex;
         align-items: center;
         justify-content: space-between;
         span {
           width: 56px;
+          @include font(400, 16px);
+        }
+        b {
+          @include font(400, 18px);
         }
         &:first-child {
           margin-bottom: 44px;
@@ -44,27 +95,17 @@
         &:nth-child(2) {
           margin-bottom: 10px;
           b {
+            @include font(400, 16px);
             display: flex;
             gap: 5px;
           }
         }
+        &:last-child {
+          b {
+            @include font(400, 14px);
+          }
+        }
       }
-    }
-  }
-}
-
-@media screen and (min-width: 360px) {
-  .balance_card_choise {
-    .card {
-      width: 250px;
-    }
-  }
-}
-@media screen and (min-width: 768px) {
-  .balance_card_choise {
-    .card {
-      width: 300px;
-      height: 150px;
     }
   }
 }

@@ -3,10 +3,9 @@
   .container {
     div {
       position: relative;
-      background-color: #f1f4ff;
+      background-color: #0e1218;
       border-radius: 20px;
       padding: 18px;
-      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
       h3 {
         @include font(400, 18px);
         margin: 0;
@@ -23,12 +22,39 @@
           @include font(300, 14px);
         }
       }
+      ul:nth-of-type(2) {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        button {
+          border-radius: 20px;
+          border: 0;
+          padding: 10px 12px;
+          color: white;
+          background-color: #181a1e;
+          @include font(300, 10px);
+        }
+        li:first-child button {
+          background-color: #3334ff;
+        }
+      }
       ul:last-child {
         position: absolute;
         display: flex;
         gap: 20px;
         top: 18px;
         right: 18px;
+      }
+    }
+  }
+}
+#modal1 {
+  .modal {
+    .modal_desktop_menu {
+      display: block;
+      ul {
+        gap: 0;
+        justify-content: space-between;
       }
     }
   }

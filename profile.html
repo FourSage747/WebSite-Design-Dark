@@ -171,50 +171,46 @@
       </ul>
     </div>
     <main class="mobile">
-      <section class="main">
-        <div class="main-div">
-          <svg width="20" height="20">
-            <use href="./imeges/sprite.svg#icon-Profile"></use>
-          </svg>
-          Профіль
-        </div>
-      </section>
       <section class="profile_info">
         <div class="container">
-          <ul>
-            <li><b>Admin id:</b><br /><span>110A</span></li>
-            <li><b>Ім’я:</b><br /><span>Adela Parkson</span></li>
-            <li><b>Адреса:</b><br /><span>Khumaltar, Lalitpur</span></li>
-            <li><b>Номер телефону:</b><br /><span>9841236978</span></li>
-            <li><b>Email:</b><br /><span>Adela98@gmail.com</span></li>
-            <li><b>Пароль:</b><br /><span>*******</span></li>
-          </ul>
-          <ul>
-            <li>
-              <picture>
-                <source
-                  srcset="
-                    ./imeges/mobile/profile.png    1x,
-                    ./imeges/mobile/profile@2x.png 2x
-                  "
-                />
-                <img src="" alt="" />
-              </picture>
-            </li>
-            <li><button type="button">Вихід</button></li>
-            <li><button type="button">Видалити</button></li>
-          </ul>
-          <button type="button">Редагувати особисті дані</button>
+          <h2 class="h2">Your Profile</h2>
+          <div>
+            <ul>
+              <li><span>Name:</span><span>Mariia</span></li>
+              <li><span>Surname:</span><span>Skorobohata</span></li>
+              <li><span>Tel num:</span><span>+380 123 45 67</span></li>
+              <li><span>Email:</span><span>mariia123@email.com</span></li>
+              <li><span>Password:</span><span>*******</span></li>
+            </ul>
+            <ul>
+              <li data-modal-open="modal3">
+                <button type="button">Редагувати</button>
+              </li>
+              <li data-modal-open="modal4">
+                <button type="button">Видалити</button>
+              </li>
+              <li><button type="button">Вихід</button></li>
+            </ul>
+            <picture>
+              <source
+                srcset="
+                  ./imeges/mobile/profile.png    1x,
+                  ./imeges/mobile/profile@2x.png 2x
+                "
+              />
+              <img src="" alt="" />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="profile_status">
         <div class="container">
           <ul>
             <li><button type="button">Медіа канали</button></li>
-            <li>
-              <button type="button" data-modal-open="modal2">
-                Додати канал
-              </button>
+            <li data-modal-open="modal2">
+              <svg width="30" height="30">
+                <use href="./imeges/sprite.svg#icon-main-plus"></use>
+              </svg>
             </li>
           </ul>
           <div>
@@ -231,6 +227,11 @@
               <li><b>Підписники</b><br /><span>20 989</span></li>
               <li><b>Перегляди</b><br /><span>9 897</span></li>
               <li><b>Ціна</b><br /><span>32 700</span></li>
+              <li><b>Payout</b></li>
+            </ul>
+            <ul>
+              <li><button type="button">CPH</button></li>
+              <li><button type="button">CPM</button></li>
             </ul>
             <ul>
               <li data-modal-open="modal1">
@@ -268,211 +269,217 @@
             <h4>212</h4>
           </li>
         </ul>
-        <img src="./imeges/desktop/background.png" alt="" />
       </section>
       <section class="profile_profile">
-        <div class="container profile_div">
+        <div class="profile_div">
           <div>
             <ul>
-              <li><b>Admin id:</b><span>110A</span></li>
-              <li><b>Ім’я:</b><span>Adela Parkson</span></li>
-              <li><b>Адреса:</b><span>Khumaltar, Lalitpur</span></li>
-              <li><b>Номер телефону:</b><span>9841236978</span></li>
-              <li><b>Email:</b><span>Adela98@gmail.com</span></li>
-              <li><b>Пароль:</b><span>*******</span></li>
+              <li><span>Name:</span><span>Mariia</span></li>
+              <li><span>Surname:</span><span>Skorobohata</span></li>
+              <li><span>Tel num:</span><span>+380 123 45 67</span></li>
+              <li><span>Email:</span><span>mariia123@email.com</span></li>
+              <li><span>Password:</span><span>*******</span></li>
             </ul>
             <ul>
-              <li><button type="button">Редагувати особисти дані</button></li>
-              <li><button type="button">Зберегти зміни</button></li>
+              <li data-modal-open="modal3">
+                <button type="button">Редагувати</button>
+              </li>
+              <li data-modal-open="modal4">
+                <button type="button">Видалити</button>
+              </li>
+              <li><button type="button">Вихід</button></li>
+            </ul>
+            <picture>
+              <source
+                srcset="
+                  ./imeges/desktop/profile.png    1x,
+                  ./imeges/desktop/profile@2x.png 2x
+                "
+              />
+              <img src="" alt="" />
+            </picture>
+          </div>
+          <div>
+            <ul>
+              <li style="--fill-percent: 70%; --fill-color: #423eff">601,78</li>
+              <li style="--fill-percent: 90%; --fill-color: #ffdb23">
+                3002,49
+              </li>
+              <li style="--fill-percent: 75%; --fill-color: #7f59fb">216</li>
+              <li style="--fill-percent: 45%; --fill-color: #373a3e">212</li>
             </ul>
           </div>
-          <ul class="profile_ul">
-            <li>
-              <picture>
-                <source
-                  srcset="
-                    ./imeges/desktop/profile.png    1x,
-                    ./imeges/desktop/profile@2x.png 2x
-                  "
-                />
-                <img src="" alt="" />
-              </picture>
-            </li>
-            <li><button type="button">Вихід</button></li>
-            <li><button type="button">Видалити профіль</button></li>
-          </ul>
         </div>
       </section>
       <section class="profile_offers">
-        <div class="container">
-          <div>
-            <div>Медіа канали</div>
+        <ul class="profile_offers_ul">
+          <li class="profile_offers_ul_li">
             <ul>
               <li>
-                <svg width="15" height="15">
-                  <use href="./imeges/sprite.svg#icon-search"></use>
+                <span>UID</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
                 </svg>
-                <input type="text" placeholder="Пошук" />
               </li>
               <li>
-                <button type="button" data-modal-open="modal2">
-                  Додати канал
-                </button>
+                <span>Нікнейм</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>Посилання</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>Підписники</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CTR</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>Ціна</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>Статус</span>
+                <svg width="12" height="6">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
               </li>
             </ul>
-          </div>
-          <ul class="profile_offers_ul">
-            <li>
-              <span>UID</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-            <li>
-              <span>Нікнейм</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-            <li>
-              <span>Посилання</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-            <li>
-              <span>Підписники</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-            <li>
-              <span>CTR</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-            <li>
-              <span>Ціна</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-            <li>
-              <span>Статус</span>
-              <svg width="12" height="6">
-                <use href="./imeges/sprite.svg#icon-vector"></use>
-              </svg>
-            </li>
-          </ul>
-          <ul class="profile_offers_ul2">
-            <li class="profile_offers_ul2_li">
-              <ul>
-                <li>
-                  <img width="36" src="./imeges/desktop/avatar.png" alt="" />
-                </li>
-                <li>
-                  <span>Кріейтори</span><br /><b
-                    >Ком’юніті українських АІ-крінйторів</b
-                  >
-                </li>
-                <li><span>wordwall.net</span></li>
-                <li><span>20 989</span></li>
-                <li><span>9 897</span></li>
-                <li><span>32 700 ₴</span></li>
-                <li>
-                  <svg width="26" height="26">
-                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="profile_offers_ul2_li">
-              <ul>
-                <li>
-                  <img width="36" src="./imeges/desktop/avatar.png" alt="" />
-                </li>
-                <li>
-                  <span>Кріейтори</span><br /><b
-                    >Ком’юніті українських АІ-крінйторів</b
-                  >
-                </li>
-                <li><span>wordwall.net</span></li>
-                <li><span>20 989</span></li>
-                <li><span>9 897</span></li>
-                <li><span>32 700 ₴</span></li>
-                <li>
-                  <svg width="26" height="26">
-                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="profile_offers_ul2_li">
-              <ul>
-                <li>
-                  <img width="36" src="./imeges/desktop/avatar.png" alt="" />
-                </li>
-                <li>
-                  <span>Кріейтори</span><br /><b
-                    >Ком’юніті українських АІ-крінйторів</b
-                  >
-                </li>
-                <li><span>wordwall.net</span></li>
-                <li><span>20 989</span></li>
-                <li><span>9 897</span></li>
-                <li><span>32 700 ₴</span></li>
-                <li>
-                  <svg width="26" height="26">
-                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="profile_offers_ul2_li">
-              <ul>
-                <li>
-                  <img width="36" src="./imeges/desktop/avatar.png" alt="" />
-                </li>
-                <li>
-                  <span>Кріейтори</span><br /><b
-                    >Ком’юніті українських АІ-крінйторів</b
-                  >
-                </li>
-                <li><span>wordwall.net</span></li>
-                <li><span>20 989</span></li>
-                <li><span>9 897</span></li>
-                <li><span>32 700 ₴</span></li>
-                <li>
-                  <svg width="26" height="26">
-                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="profile_offers_ul2_li">
-              <ul>
-                <li>
-                  <img width="36" src="./imeges/desktop/avatar.png" alt="" />
-                </li>
-                <li>
-                  <span>Кріейтори</span><br /><b
-                    >Ком’юніті українських АІ-крінйторів</b
-                  >
-                </li>
-                <li><span>wordwall.net</span></li>
-                <li><span>20 989</span></li>
-                <li><span>9 897</span></li>
-                <li><span>32 700 ₴</span></li>
-                <li>
-                  <svg width="26" height="26">
-                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="profile_offers_ul_li">
+            <ul>
+              <li>
+                <img width="36" src="./imeges/desktop/avatar.png" alt="" />
+              </li>
+              <li>
+                <span>Кріейтори</span><br /><b
+                  >Ком’юніті українських АІ-крінйторів</b
+                >
+              </li>
+              <li><span>wordwall.net</span></li>
+              <li><span>20 989</span></li>
+              <li><span>9 897</span></li>
+              <li><span>32 700 ₴</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-white-bin"></use>
+                </svg>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+          </li>
+          <li class="profile_offers_ul_li">
+            <ul>
+              <li>
+                <img width="36" src="./imeges/desktop/avatar.png" alt="" />
+              </li>
+              <li>
+                <span>Кріейтори</span><br /><b
+                  >Ком’юніті українських АІ-крінйторів</b
+                >
+              </li>
+              <li><span>wordwall.net</span></li>
+              <li><span>20 989</span></li>
+              <li><span>9 897</span></li>
+              <li><span>32 700 ₴</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-white-bin"></use>
+                </svg>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+          </li>
+          <li class="profile_offers_ul_li">
+            <ul>
+              <li>
+                <img width="36" src="./imeges/desktop/avatar.png" alt="" />
+              </li>
+              <li>
+                <span>Кріейтори</span><br /><b
+                  >Ком’юніті українських АІ-крінйторів</b
+                >
+              </li>
+              <li><span>wordwall.net</span></li>
+              <li><span>20 989</span></li>
+              <li><span>9 897</span></li>
+              <li><span>32 700 ₴</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-white-bin"></use>
+                </svg>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+          </li>
+          <li class="profile_offers_ul_li">
+            <ul>
+              <li>
+                <img width="36" src="./imeges/desktop/avatar.png" alt="" />
+              </li>
+              <li>
+                <span>Кріейтори</span><br /><b
+                  >Ком’юніті українських АІ-крінйторів</b
+                >
+              </li>
+              <li><span>wordwall.net</span></li>
+              <li><span>20 989</span></li>
+              <li><span>9 897</span></li>
+              <li><span>32 700 ₴</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-white-bin"></use>
+                </svg>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+          </li>
+          <li class="profile_offers_ul_li">
+            <ul>
+              <li>
+                <img width="36" src="./imeges/desktop/avatar.png" alt="" />
+              </li>
+              <li>
+                <span>Кріейтори</span><br /><b
+                  >Ком’юніті українських АІ-крінйторів</b
+                >
+              </li>
+              <li><span>wordwall.net</span></li>
+              <li><span>20 989</span></li>
+              <li><span>9 897</span></li>
+              <li><span>32 700 ₴</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-white-bin"></use>
+                </svg>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
@@ -491,15 +498,15 @@
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Підписники</span>
+            <span>Бренд</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Перегляди</span>
+            <span>Виплати</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Ціна</span>
+            <span>Баланс</span>
             <input type="text" placeholder="...." />
           </label>
           <div class="modal_desktop_menu">
@@ -516,14 +523,14 @@
                 <span>CPL</span>
                 <p id="p2">$</p>
                 <svg width="12" height="6" open-paragraf="p2">
-                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
                 </svg>
               </li>
               <li>
                 <span>CPC</span>
                 <p id="p3">$</p>
                 <svg width="12" height="6" open-paragraf="p3">
-                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
                 </svg>
               </li>
               <li>
@@ -557,15 +564,15 @@
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Підписники</span>
+            <span>Бренд</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Перегляди</span>
+            <span>Виплати</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Ціна</span>
+            <span>Баланс</span>
             <input type="text" placeholder="...." />
           </label>
           <div class="modal_desktop_menu">
@@ -582,14 +589,14 @@
                 <span>CPL</span>
                 <p id="p5">$</p>
                 <svg width="12" height="6" open-paragraf="p5">
-                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
                 </svg>
               </li>
               <li>
                 <span>CPC</span>
                 <p id="p6">$</p>
                 <svg width="12" height="6" open-paragraf="p6">
-                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
                 </svg>
               </li>
               <li>
@@ -607,11 +614,59 @@
                 <svg width="13" height="13">
                   <use href="./imeges/sprite.svg#icon-plus"></use>
                 </svg>
-                Додати канал
+                Додати офер
               </button>
             </li>
           </ul>
         </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal3" data-modal>
+      <div class="modal">
+        <h2>Редагувати профіль</h2>
+        <form>
+          <label>
+            <span>Ім'я</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Прізвище</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Номер Телефону</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Пошта</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Пароль</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li>
+              <button type="button">
+                <svg width="13" height="13">
+                  <use href="./imeges/sprite.svg#icon-plus"></use>
+                </svg>
+                Зберегти
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal4" data-modal>
+      <div class="modal">
+        <h2>Видалити профіль</h2>
+        <svg width="43" height="10">
+          <use href="./imeges/sprite.svg#icon-Line"></use>
+        </svg>
+        <p>Ви впевнені що хочете видалити профіль назавжди?</p>
+        <button type="button">Видалити</button>
       </div>
     </div>
     <script src="./scripts/modal.js"></script>

@@ -3,11 +3,9 @@
   .user_status_div {
     position: relative;
     padding: 18px;
-    background-color: #f1f4ff;
-    // background-color: #71a9ff;
+    background-color: #0e1218;
     transition: background 0.5s ease;
     border-radius: 20px;
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
     .user_status_normal_div {
       padding-bottom: 17px;
       h3 {
@@ -47,7 +45,7 @@
         li {
           position: relative;
           padding: 10px;
-          background-color: #f1f4ff;
+          background-color: #171a21;
           // width: 234px;
           border-radius: 10px;
           svg {
@@ -56,33 +54,33 @@
             right: 10px;
           }
           &:first-child {
-            border-bottom: 5px solid #ff0000;
+            border-bottom: 5px solid #423efc;
           }
           &:nth-child(2) {
-            border-bottom: 5px solid #ffd600;
+            border-bottom: 5px solid #f6d423;
           }
           &:nth-child(3) {
-            border-bottom: 5px solid #0fb600;
+            border-bottom: 5px solid #7c57f4;
           }
           &:nth-child(4) {
-            border-bottom: 5px solid #9e00ff;
+            border-bottom: 5px solid #36393e;
           }
           &:last-child {
-            border-bottom: 5px solid #144c9f;
+            border-bottom: 5px solid #ff7a00;
           }
         }
       }
       .user_status_hidden_ul2 {
+        position: relative;
         margin: 6px 0 12px 0;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        // gap: 0 12px;
+        // gap: 0 40px;
         padding: 18px;
-        background-color: #f1f4ff;
+        background-color: #171a21;
         border-radius: 20px;
-        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
         h3 {
           @include font(300, 20px);
           margin: 0;
@@ -91,9 +89,13 @@
           display: flex;
           align-items: center;
           gap: 10px;
-          .vector {
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          }
+        }
+        .vector {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         ul:last-of-type {
           overflow: hidden;
@@ -133,7 +135,7 @@
         li {
           @include font(300, 14px);
           padding: 10px;
-          background-color: #f1f4ff;
+          background-color: #171a21;
           border-radius: 20px;
           box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
         }
@@ -149,7 +151,7 @@
       border-radius: 20px;
       color: white;
       box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-      background: linear-gradient(to right, #70a9ff, #0149b4);
+      background-color: #3334ff;
     }
   }
 }

@@ -4,10 +4,10 @@
     border: 0;
     padding: 15px 20px;
     border-radius: 20px;
-    background-color: #f1f4ff;
+    background-color: #0e1218;
+    color: white;
     margin-bottom: 30px;
     @include font(400, 16px);
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
   }
   .balance_payment_ul {
     display: flex;
@@ -15,8 +15,7 @@
     gap: 40px;
     padding: 20px;
     border-radius: 20px;
-    background-color: #f1f4ff;
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+    background-color: #0e1218;
     .balance_payment_li {
       ul {
         display: flex;

@@ -24,14 +24,14 @@
             <a>
               <picture>
                 <source
-                  srcset="./imeges/desktop/logo.png 1x"
+                  srcset="./imeges/desktop/logo.png 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./imeges/tablet/logo.png 1x"
+                  srcset="./imeges/tablet/logo.png 2x"
                   media="(min-width: 768px)"
                 />
-                <source srcset="./imeges/mobile/logo.png 1x" />
+                <source srcset="./imeges/mobile/logo.png 2x" />
                 <img src="" alt="" />
               </picture>
             </a>
@@ -172,29 +172,30 @@
       </ul>
     </div>
     <main>
-      <section class="main">
-        <div class="main-div">
-          <svg width="20" height="20">
-            <use href="./imeges/sprite.svg#icon-House"></use>
-          </svg>
-          Головна
-        </div>
-      </section>
       <section class="main-ul">
         <div class="container">
-          <ul class="main-ul-button">
-            <li><button type="button">Платіжний метод</button></li>
-            <li>
-              <button type="button" data-modal-open="modal1">
-                Додати карту
-              </button>
-            </li>
-          </ul>
+          <h2 class="h2">Welcome, Mariia!</h2>
           <ul class="choise-card">
-            <li>
-              <svg width="5" height="30">
-                <use href="./imeges/sprite.svg#icon-arrow-left"></use>
-              </svg>
+            <li class="card">
+              <ul>
+                <li>
+                  <b>$95, 400.00 USD</b
+                  ><img src="./imeges/mobile/VISA.png" alt="" />
+                </li>
+                <li>
+                  <b
+                    >**** **** **** 3814
+                    <svg width="20" height="20">
+                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
+                  ><span>Expires 04 / 24</span>
+                </li>
+                <li>
+                  <b>MARIIA SKOROBOHATA</b
+                  ><svg width="24" height="24">
+                    <use href="./imeges/sprite.svg#icon-Other"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
             <li class="card">
               <ul>
@@ -210,19 +211,62 @@
                   ><span>Expires 04 / 24</span>
                 </li>
                 <li>
-                  <b>Kevin Gilbert</b
+                  <b>MARIIA SKOROBOHATA</b
                   ><svg width="24" height="24">
                     <use href="./imeges/sprite.svg#icon-Other"></use>
                   </svg>
                 </li>
               </ul>
             </li>
+            <li class="card">
+              <ul>
+                <li>
+                  <b>$95, 400.00 USD</b
+                  ><img src="./imeges/mobile/VISA.png" alt="" />
+                </li>
+                <li>
+                  <b
+                    >**** **** **** 3814
+                    <svg width="20" height="20">
+                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
+                  ><span>Expires 04 / 24</span>
+                </li>
+                <li>
+                  <b>MARIIA SKOROBOHATA</b
+                  ><svg width="24" height="24">
+                    <use href="./imeges/sprite.svg#icon-Other"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main_addCard">
+        <div class="container">
+          <ul class="main_addCard_ul">
             <li>
-              <svg width="5" height="30">
-                <use href="./imeges/sprite.svg#icon-arrow-right"></use>
+              <h3>Add Card</h3>
+              <svg width="28" height="22">
+                <use href="./imeges/sprite.svg#icon-credit-card"></use>
+              </svg>
+            </li>
+            <li data-modal-open="modal1">
+              <svg width="32" height="32">
+                <use href="./imeges/sprite.svg#icon-main-plus"></use>
               </svg>
             </li>
           </ul>
+          <div>
+            <ul>
+              <li style="--fill-percent: 70%; --fill-color: #423eff">601,78</li>
+              <li style="--fill-percent: 90%; --fill-color: #ffdb23">
+                3002,49
+              </li>
+              <li style="--fill-percent: 75%; --fill-color: #7f59fb">216</li>
+              <li style="--fill-percent: 45%; --fill-color: #373a3e">212</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="main_info">

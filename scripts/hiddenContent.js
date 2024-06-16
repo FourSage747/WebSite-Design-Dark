@@ -18,10 +18,8 @@ buttons.forEach((button) => {
     if (content.classList.contains("user_status_hidden_div")) {
       if (content.classList.contains("show")) {
         button.textContent = "Згорнути";
-        normalDiv.style.backgroundColor = "#71a9ff";
       } else {
         button.textContent = "Розгорнути";
-        normalDiv.style.backgroundColor = "#f1f4ff";
         hiddenUl.classList.remove("show");
       }
     }
@@ -36,12 +34,13 @@ buttons.forEach((button) => {
 
     if (content.classList.contains("user_offers_list_hidden_div")) {
       if (content.classList.contains("show")) {
-        button.style.background =
-          "linear-gradient(to bottom, #70a9ff, #0149b4)";
-        button.style.color = "#fff";
+        button.style.background = "#0E1218";
+        button.style.color = "#423EFC";
+        button.style.borderRadius = "20px 20px 0 0";
       } else {
-        button.style.background = "#f1f4ff";
-        button.style.color = "#000";
+        button.style.background = "#181A1E";
+        button.style.color = "#fff";
+        button.style.borderRadius = "20px";
       }
     }
   });
@@ -61,12 +60,10 @@ function moveTextContent(event) {
   span.textContent = content;
 
   if (previousElement) {
-    previousElement.style.backgroundColor = "#fff";
-    previousElement.style.color = "#000";
+    previousElement.style.backgroundColor = "#181a1e";
   }
 
   event.target.style.backgroundColor = "#4777F2";
-  event.target.style.color = "#fff";
 
   previousElement = event.target;
 }

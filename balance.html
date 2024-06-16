@@ -181,19 +181,40 @@
       </section>
       <section class="balance_card">
         <div class="container">
-          <ul class="balance_card_button">
-            <li><button type="button">Платіжний метод</button></li>
+          <ul class="balance_addCard_ul">
             <li>
-              <button type="button" data-modal-open="modal1">
-                Додати карту
-              </button>
+              <h3>Add Card</h3>
+              <svg width="28" height="22">
+                <use href="./imeges/sprite.svg#icon-credit-card"></use>
+              </svg>
+            </li>
+            <li data-modal-open="modal1">
+              <svg width="32" height="32">
+                <use href="./imeges/sprite.svg#icon-main-plus"></use>
+              </svg>
             </li>
           </ul>
-          <ul class="balance_card_choise">
-            <li>
-              <svg width="5" height="30">
-                <use href="./imeges/sprite.svg#icon-arrow-left"></use>
-              </svg>
+          <ul class="choise-card">
+            <li class="card">
+              <ul>
+                <li>
+                  <b>$95, 400.00 USD</b
+                  ><img src="./imeges/mobile/VISA.png" alt="" />
+                </li>
+                <li>
+                  <b
+                    >**** **** **** 3814
+                    <svg width="20" height="20">
+                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
+                  ><span>Expires 04 / 24</span>
+                </li>
+                <li>
+                  <b>MARIIA SKOROBOHATA</b
+                  ><svg width="24" height="24">
+                    <use href="./imeges/sprite.svg#icon-Other"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
             <li class="card">
               <ul>
@@ -209,17 +230,33 @@
                   ><span>Expires 04 / 24</span>
                 </li>
                 <li>
-                  <b>Kevin Gilbert</b
+                  <b>MARIIA SKOROBOHATA</b
                   ><svg width="24" height="24">
                     <use href="./imeges/sprite.svg#icon-Other"></use>
                   </svg>
                 </li>
               </ul>
             </li>
-            <li>
-              <svg width="5" height="30">
-                <use href="./imeges/sprite.svg#icon-arrow-right"></use>
-              </svg>
+            <li class="card">
+              <ul>
+                <li>
+                  <b>$95, 400.00 USD</b
+                  ><img src="./imeges/mobile/VISA.png" alt="" />
+                </li>
+                <li>
+                  <b
+                    >**** **** **** 3814
+                    <svg width="20" height="20">
+                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
+                  ><span>Expires 04 / 24</span>
+                </li>
+                <li>
+                  <b>MARIIA SKOROBOHATA</b
+                  ><svg width="24" height="24">
+                    <use href="./imeges/sprite.svg#icon-Other"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -458,7 +495,14 @@
           </ul>
           <ul>
             <li><button type="button" data-modal-close>Відмінити</button></li>
-            <li><button type="button">Додати карту</button></li>
+            <li>
+              <button type="button">
+                <svg width="13" height="13">
+                  <use href="./imeges/sprite.svg#icon-plus"></use>
+                </svg>
+                Додати карту
+              </button>
+            </li>
           </ul>
         </form>
       </div>

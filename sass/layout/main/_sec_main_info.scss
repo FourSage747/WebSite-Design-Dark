@@ -6,13 +6,13 @@
     gap: 6px;
     li {
       padding: 6px 12px;
-      background-color: #f1f4ff;
+      background-color: #0e1218;
       border-radius: 10px;
       &:first-child {
-        border-bottom: 3.5px solid #ff0000;
+        border-bottom: 3.5px solid #403cf3;
       }
       &:nth-child(2) {
-        border-bottom: 3.5px solid #ffd600;
+        border-bottom: 3.5px solid #dfc022;
       }
       &:nth-child(3) {
         border-bottom: 3.5px solid #0fb600;
@@ -23,7 +23,10 @@
       h4 {
         margin: 0;
         margin-top: 5px;
-        @include font(700, 20px);
+        @include font(500, 18px);
+      }
+      span {
+        @include font(300, 12px);
       }
     }
   }

@@ -210,31 +210,31 @@
               <ul class="user_status_hidden_ul1">
                 <li>
                   <span>Ліди</span><br /><b>601,78</b>
-                  <svg width="20" height="20">
+                  <svg width="20" height="20" data-modal-open="modal4">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
                 <li>
                   <span>Списання</span><br /><b>3002,49</b>
-                  <svg width="20" height="20">
+                  <svg width="20" height="20" data-modal-open="modal5">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
                 <li>
                   <span>Approve</span><br /><b>216</b>
-                  <svg width="20" height="20">
+                  <svg width="20" height="20" data-modal-open="modal6">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
                 <li>
                   <span>Сповіщення</span><br /><b>212</b>
-                  <svg width="20" height="20">
+                  <svg width="20" height="20" data-modal-open="modal7">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
                 <li>
                   <span>Баланс</span><br /><b>216</b>
-                  <svg width="20" height="20">
+                  <svg width="20" height="20" data-modal-open="modal8">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
                   </svg>
                 </li>
@@ -242,11 +242,6 @@
               <div class="user_status_hidden_ul2">
                 <h3>Платежі</h3>
                 <ul>
-                  <li data-modal-open="modal2">
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-pencil"></use>
-                    </svg>
-                  </li>
                   <li data-modal-open="modal3">
                     <svg width="17" height="17">
                       <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -262,12 +257,20 @@
                       <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
                     </svg>
                   </li>
-                  <li class="vector" hidden-content-open="open-vector">
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                  <li data-modal-open="modal2">
+                    <svg width="21" height="21">
+                      <use href="./imeges/sprite.svg#icon-main-plus"></use>
                     </svg>
                   </li>
                 </ul>
+                <svg
+                  class="vector"
+                  width="17"
+                  height="17"
+                  hidden-content-open="open-vector"
+                >
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
                 <ul id="open-vector" class="open-vector">
                   <li><b>Номер</b><br /><span>EKG464SJFN17</span></li>
                   <li>
@@ -375,45 +378,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info1" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -421,20 +422,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -448,6 +444,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -475,45 +476,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info2" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -521,20 +520,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -548,6 +542,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -575,45 +574,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info3" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -621,20 +618,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -648,6 +640,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -675,45 +672,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info4" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -721,20 +716,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -748,6 +738,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -775,45 +770,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info5" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -821,20 +814,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -848,6 +836,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -875,45 +868,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info6" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -921,20 +912,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -948,6 +934,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -975,45 +966,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info7" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1021,20 +1010,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1048,6 +1032,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1075,45 +1064,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info8" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1121,20 +1108,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1148,6 +1130,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1175,45 +1162,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info9" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1221,20 +1206,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1248,6 +1228,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1275,45 +1260,43 @@
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
+                <span>Бренд</span>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
                 </svg>
-              </li>
-              <li data-modal-open="modal1">
-                <svg width="26" height="26">
+                <svg width="26" height="26" data-modal-open="modal1">
                   <use href="./imeges/sprite.svg#icon-settings"></use>
                 </svg>
               </li>
             </ul>
             <div id="status-info10" class="user_offers_list_hidden_div">
               <ul class="user_offers_list_hidden_div_ul1">
-                <li>
+                <li data-modal-open="modal4">
                   <span>Ліди</span><br /><b>601,78</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal5">
                   <span>Списання</span><br /><b>3002,49</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal6">
                   <span>Approve</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal7">
                   <span>Сповіщення</span><br /><b>212</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-pencil"></use>
                   </svg>
                 </li>
-                <li>
+                <li data-modal-open="modal8">
                   <span>Баланс</span><br /><b>216</b>
                   <svg width="20" height="20">
                     <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1321,20 +1304,15 @@
                 </li>
               </ul>
               <ul class="user_offers_list_hidden_div_ul2">
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р</span></li>
-                <li><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
+                <li><span>Номер.</span></li>
+                <li><span>Дата рахунку</span></li>
+                <li><span>Дата оплати</span></li>
+                <li><span>Статус</span></li>
+                <li><span>Спосіб оплати</span></li>
+                <li><span>Підписка</span></li>
+                <li><span>Сума</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
-                      <svg width="17" height="17">
-                        <use href="./imeges/sprite.svg#icon-pencil"></use>
-                      </svg>
-                    </li>
                     <li data-modal-open="modal3">
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
@@ -1348,6 +1326,11 @@
                     <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-main-plus"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1372,7 +1355,7 @@
     </footer>
     <div class="backdrop is-hidden" id="modal1" data-modal>
       <div class="modal">
-        <h2>Редагувати офер</h2>
+        <h2>Редагувати данні користувача</h2>
         <form>
           <label>
             <span>Нікнейм</span>
@@ -1438,39 +1421,31 @@
     </div>
     <div class="backdrop is-hidden" id="modal2" data-modal>
       <div class="modal">
-        <h2>Заміна данних платежу</h2>
+        <h2>Додати транзакцію</h2>
         <form>
           <label>
             <span>Номер</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="EKG464SJFN17" />
           </label>
-          <ul>
-            <li>
-              <label
-                ><span>Дата рахунку</span><input type="text" placeholder="****"
-              /></label>
-            </li>
-            <li>
-              <label
-                ><span>Дата оплати</span><input type="text" placeholder="...."
-              /></label>
-            </li>
-          </ul>
-          <label>
-            <span>Статус</span>
-            <input type="text" placeholder="...." />
-          </label>
+          <label
+            ><span>Дата рахунку</span
+            ><input type="text" placeholder="10 грудня 2024 р."
+          /></label>
+          <label
+            ><span>Дата оплати</span
+            ><input type="text" placeholder="10 грудня 2024 р."
+          /></label>
           <label>
             <span>Спосіб оплати</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="0077 **** **** 3814 (Visa)" />
           </label>
           <label>
             <span>Підписка</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="Бонус (річний)" />
           </label>
           <label>
             <span>Сума</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="$129.88" />
           </label>
           <ul>
             <li><button type="button" data-modal-close>Відмінити</button></li>
@@ -1481,39 +1456,106 @@
     </div>
     <div class="backdrop is-hidden" id="modal3" data-modal>
       <div class="modal">
-        <h2>Внесення коректив платежу</h2>
+        <h2>Редагувати транзакцію</h2>
         <form>
           <label>
             <span>Номер</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="EKG464SJFN17" />
           </label>
-          <ul>
-            <li>
-              <label
-                ><span>Дата рахунку</span><input type="text" placeholder="****"
-              /></label>
-            </li>
-            <li>
-              <label
-                ><span>Дата оплати</span><input type="text" placeholder="...."
-              /></label>
-            </li>
-          </ul>
-          <label>
-            <span>Статус</span>
-            <input type="text" placeholder="...." />
-          </label>
+          <label
+            ><span>Дата рахунку</span
+            ><input type="text" placeholder="10 грудня 2024 р."
+          /></label>
+          <label
+            ><span>Дата оплати</span
+            ><input type="text" placeholder="10 грудня 2024 р."
+          /></label>
           <label>
             <span>Спосіб оплати</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="0077 **** **** 3814 (Visa)" />
           </label>
           <label>
             <span>Підписка</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="Бонус (річний)" />
           </label>
           <label>
             <span>Сума</span>
-            <input type="text" placeholder="...." />
+            <input type="text" placeholder="$129.88" />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal4" data-modal>
+      <div class="modal">
+        <h2>Внести зміни</h2>
+        <form>
+          <label>
+            <span>Ліди</span>
+            <input type="text" placeholder="..." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal5" data-modal>
+      <div class="modal">
+        <h2>Внести зміни</h2>
+        <form>
+          <label>
+            <span>Списання</span>
+            <input type="text" placeholder="..." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal6" data-modal>
+      <div class="modal">
+        <h2>Внести зміни</h2>
+        <form>
+          <label>
+            <span>Approve</span>
+            <input type="text" placeholder="..." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal7" data-modal>
+      <div class="modal">
+        <h2>Внести зміни</h2>
+        <form>
+          <label>
+            <span>Сповіщення</span>
+            <input type="text" placeholder="..." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal8" data-modal>
+      <div class="modal">
+        <h2>Внести зміни</h2>
+        <form>
+          <label>
+            <span>Баланс</span>
+            <input type="text" placeholder="..." />
           </label>
           <ul>
             <li><button type="button" data-modal-close>Відмінити</button></li>

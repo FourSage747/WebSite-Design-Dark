@@ -1,7 +1,13 @@
-body {
+body,
+html {
+  position: relative;
+  z-index: -1;
   margin: 0;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  background-color: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
 }
 ul {
   margin: 0;
@@ -10,6 +16,16 @@ ul {
 }
 a {
   text-decoration: none;
+}
+svg {
+  stroke: white;
+}
+.h2 {
+  background: linear-gradient(90deg, #e5f0ff 0%, #608bfe 53%, #2d29ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .container {

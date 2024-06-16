@@ -4,10 +4,16 @@
   pointer-events: none;
 }
 
-body {
+body,
+html {
+  position: relative;
+  z-index: -1;
   margin: 0;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  background-color: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 ul {
@@ -18,6 +24,18 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+svg {
+  stroke: white;
+}
+
+.h2 {
+  background: linear-gradient(90deg, #e5f0ff 0%, #608bfe 53%, #2d29ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .container {
@@ -72,8 +90,8 @@ header {
   position: fixed;
   z-index: 20;
   width: 100%;
-  padding: 8px 0;
-  background: linear-gradient(to bottom, #70a9ff, #0149b4);
+  padding: 10px 0;
+  background: #000;
 }
 
 .nav-div {
@@ -114,15 +132,8 @@ h1 {
   align-items: center;
   gap: 10px;
 }
-.logo a {
-  padding: 5px;
-  border-radius: 50%;
-  background-color: white;
-}
-.logo a picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.logo img {
+  width: 30px;
 }
 
 nav {
@@ -166,11 +177,10 @@ nav {
   width: 70%;
   height: 100%;
   overflow: auto;
-  background: linear-gradient(to bottom, #70a9ff, #0149b4);
+  background: #0e1218;
   padding: 96px 0 80px 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(-100%);
-  padding-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -178,24 +188,21 @@ nav {
 .modal-menu a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   color: white;
 }
-
-.is-active-mobile {
-  width: 400px;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #092145;
+.modal-menu .is-active-mobile a {
+  color: #302eff;
+}
+.modal-menu .is-active-mobile a svg {
+  stroke: #302eff;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
     font-weight: 500;
     font-size: 26px;
-  }
-  .modal-nav {
-    width: 50%;
   }
   .modal-menu {
     padding-left: 24px;
@@ -225,14 +232,20 @@ nav {
     justify-content: center;
     padding: 20px 0;
     border-radius: 20px;
-    background-color: #124897;
+  }
+  .menu li:hover a {
+    color: #302eff;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu li:hover {
-    background-color: #092145;
+  .menu li:hover a svg {
+    stroke: #302eff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu .is-active {
-    background-color: #092145;
+  .menu .is-active a {
+    color: #302eff;
+  }
+  .menu .is-active a svg {
+    stroke: #302eff;
   }
   .menu a {
     width: 100%;
@@ -244,6 +257,7 @@ nav {
   }
   header {
     position: fixed;
+    background: #0e1218;
     width: 295px;
     height: 100%;
     padding: 20px 0;
@@ -253,11 +267,8 @@ nav {
     font-size: 26px;
     color: black;
   }
-  .logo {
-    padding: 15px 0;
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
+  .logo h1 {
+    color: white;
   }
   .logo a {
     padding: 0;
@@ -287,73 +298,121 @@ main {
   align-items: center;
   gap: 8px;
   color: white;
-  background: linear-gradient(to bottom, #70a9ff, #0149b4);
+  background: #0e1218;
 }
 
-.balance_card .balance_card_button {
+.balance_card h3 {
+  margin: 0;
+  margin-right: 6px;
+}
+.balance_card .balance_addCard_ul {
+  margin: 20px 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 13px 0;
 }
-.balance_card .balance_card_button li {
-  padding: 8px 10px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+.balance_card .balance_addCard_ul li {
+  display: flex;
 }
-.balance_card .balance_card_button li:nth-child(2) {
-  border-radius: 20px;
-  color: white;
-  background: linear-gradient(to right, #70a9ff, #0149b4);
-}
-.balance_card .balance_card_button li:nth-child(2) button {
-  color: white;
-}
-.balance_card .balance_card_button button {
-  border: 0;
-  padding: 0;
-  background: transparent;
-}
-.balance_card .balance_card_choise {
+.balance_card .choise-card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 290px;
+  margin: auto;
 }
-.balance_card .balance_card_choise .card {
+.balance_card .choise-card .card {
   color: white;
   padding: 20px;
-  border-radius: 20px;
-  background: linear-gradient(300deg, #bb6bd9, #0149b4);
+  border-radius: 10px;
+  background: linear-gradient(330deg, #8571b8, #051757);
 }
-.balance_card .balance_card_choise .card li {
+.balance_card .choise-card .card:first-child {
+  position: absolute;
+  height: 60%;
+  left: -78%;
+}
+.balance_card .choise-card .card:first-child li span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.balance_card .choise-card .card:first-child li b {
+  font-weight: 400;
+  font-size: 14px;
+}
+.balance_card .choise-card .card:first-child li:first-child {
+  margin-bottom: 18px;
+}
+.balance_card .choise-card .card:first-child li:nth-child(2) {
+  margin-bottom: 20px;
+}
+.balance_card .choise-card .card:first-child li:nth-child(2) b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.balance_card .choise-card .card:first-child li:last-child b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.balance_card .choise-card .card:last-child {
+  position: absolute;
+  height: 60%;
+  right: -78%;
+}
+.balance_card .choise-card .card:last-child li span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.balance_card .choise-card .card:last-child li b {
+  font-weight: 400;
+  font-size: 14px;
+}
+.balance_card .choise-card .card:last-child li:first-child {
+  margin-bottom: 18px;
+}
+.balance_card .choise-card .card:last-child li:nth-child(2) {
+  margin-bottom: 20px;
+}
+.balance_card .choise-card .card:last-child li:nth-child(2) b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.balance_card .choise-card .card:last-child li:last-child b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.balance_card .choise-card .card li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.balance_card .balance_card_choise .card li span {
+.balance_card .choise-card .card li span {
   width: 56px;
+  font-weight: 400;
+  font-size: 16px;
 }
-.balance_card .balance_card_choise .card li:first-child {
+.balance_card .choise-card .card li b {
+  font-weight: 400;
+  font-size: 18px;
+}
+.balance_card .choise-card .card li:first-child {
   margin-bottom: 44px;
 }
-.balance_card .balance_card_choise .card li:nth-child(2) {
+.balance_card .choise-card .card li:nth-child(2) {
   margin-bottom: 10px;
 }
-.balance_card .balance_card_choise .card li:nth-child(2) b {
+.balance_card .choise-card .card li:nth-child(2) b {
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
   gap: 5px;
 }
+.balance_card .choise-card .card li:last-child b {
+  font-weight: 400;
+  font-size: 14px;
+}
 
-@media screen and (min-width: 360px) {
-  .balance_card_choise .card {
-    width: 250px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .balance_card_choise .card {
-    width: 300px;
-    height: 150px;
-  }
-}
 .balance_balance {
   padding-top: 12px;
 }
@@ -361,16 +420,15 @@ main {
   text-align: center;
   border: 0;
   padding: 10px 18px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   border-radius: 10px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .balance_balance .balance_div {
   margin: 12px 0;
   padding: 30px 20px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   border-radius: 20px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
 .balance_balance .balance_div h3 {
   margin: 0;
@@ -386,7 +444,7 @@ main {
   padding: 8px 12px;
   border-radius: 20px;
   color: white;
-  background: linear-gradient(to right, #70a9ff, #0149b4);
+  background: #3334ff;
 }
 
 .balance_status {
@@ -396,17 +454,16 @@ main {
   text-align: center;
   border: 0;
   padding: 10px 18px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   border-radius: 10px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
   margin-bottom: 8px;
+  color: white;
 }
 .balance_status .container div {
   position: relative;
   padding: 20px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   border-radius: 20px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
 .balance_status .container div h3 {
   margin: 0;
@@ -465,21 +522,21 @@ main {
 }
 .balance_data ul li {
   padding: 10px 34px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   width: 100%;
   border-radius: 20px;
 }
 .balance_data ul li:first-child {
-  border-bottom: 5px solid #ff0000;
+  border-bottom: 5px solid #423efc;
 }
 .balance_data ul li:nth-child(2) {
-  border-bottom: 5px solid #ffd600;
+  border-bottom: 5px solid #f6d423;
 }
 .balance_data ul li:nth-child(3) {
-  border-bottom: 5px solid #0fb600;
+  border-bottom: 5px solid #7c57f4;
 }
 .balance_data ul li:last-child {
-  border-bottom: 5px solid #9e00ff;
+  border-bottom: 5px solid #36393e;
 }
 .balance_data ul li h4 {
   margin: 0;
@@ -497,9 +554,9 @@ main {
   text-align: center;
   border: 0;
   padding: 10px 18px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   border-radius: 10px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  color: white;
   margin-bottom: 8px;
 }
 .balance_addCard .container .desktop_card_ul {
@@ -507,11 +564,10 @@ main {
   justify-content: space-between;
 }
 .balance_addCard .container .desktop_card_ul .desktop_card_li {
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
   color: white;
   padding: 22px;
   border-radius: 20px;
-  background: linear-gradient(300deg, #bb6bd9, #0149b4);
+  background: linear-gradient(330deg, #8571b8, #051757);
 }
 .balance_addCard .container .desktop_card_ul .desktop_card_li li {
   display: flex;
@@ -551,8 +607,7 @@ main {
   gap: 5px;
   align-items: center;
   justify-content: center;
-  background-color: #f1f4ff;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  background-color: #181a1e;
   border-radius: 20px;
 }
 
@@ -564,18 +619,17 @@ main {
   gap: 30px;
 }
 .balance_addBalance .container ul li {
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
 .balance_addBalance .container ul li:first-child button {
-  background: #f1f4ff;
-  color: black;
+  background-color: #0e1218;
+  color: white;
 }
 .balance_addBalance .container ul button {
   border: 0;
   padding: 15px 20px;
   border-radius: 20px;
-  background: linear-gradient(to right, #70a9ff, #0149b4);
+  background-color: #423efc;
   color: white;
   font-weight: 400;
   font-size: 16px;
@@ -584,9 +638,8 @@ main {
   width: 342px;
   margin-top: 30px;
   padding: 30px 20px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
   border-radius: 20px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
 .balance_addBalance .container div h3 {
   margin: 0;
@@ -606,11 +659,11 @@ main {
   border: 0;
   padding: 15px 20px;
   border-radius: 20px;
-  background-color: #f1f4ff;
+  background-color: #0e1218;
+  color: white;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
 .balance_payment .balance_payment_ul {
   display: flex;
@@ -618,8 +671,7 @@ main {
   gap: 40px;
   padding: 20px;
   border-radius: 20px;
-  background-color: #f1f4ff;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  background-color: #0e1218;
 }
 .balance_payment .balance_payment_ul .balance_payment_li ul {
   display: flex;
@@ -648,7 +700,7 @@ main {
 
 footer {
   padding: 13px 0;
-  background: linear-gradient(to bottom, #70a9ff, #0149b4);
+  background: #000;
 }
 footer div {
   display: flex;
@@ -662,7 +714,7 @@ footer div {
   height: 100%;
   width: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(67, 67, 67, 0.5);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -674,7 +726,7 @@ footer div {
   padding: 15px;
   left: 50%;
   top: 50%;
-  background-color: white;
+  background-color: #0e1218;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transform: translate(-50%, -50%) scale(1);
@@ -682,6 +734,42 @@ footer div {
 }
 .modal .modal_desktop_menu {
   display: none;
+}
+.modal .modal_desktop_menu ul {
+  display: flex;
+}
+.modal .modal_desktop_menu ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  padding: 6px 10px;
+  flex: 1;
+  min-height: 20px;
+  background-color: #181a1e;
+}
+.modal .modal_desktop_menu ul li:first-child {
+  background-color: #2e65f3;
+  color: white;
+}
+.modal .modal_desktop_menu ul li span {
+  margin: 0;
+}
+.modal .modal_desktop_menu ul li p {
+  margin: 0;
+  display: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal .modal_desktop_menu ul li svg {
+  transform: rotate(0deg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal .modal_desktop_menu ul li .rotate {
+  transform: rotate(180deg);
+}
+.modal .modal_desktop_menu ul li .visible {
+  display: block;
 }
 .modal h2 {
   margin: 0;
@@ -705,6 +793,7 @@ footer div {
   display: block;
 }
 .modal form label input {
+  background: transparent;
   width: 100%;
   box-sizing: border-box;
   padding: 11px 14px;
@@ -725,10 +814,10 @@ footer div {
   border: 0;
   border-radius: 20px;
   color: white;
-  background-color: #a3aed0;
+  background: #181a1e;
 }
 .modal form ul li:last-child button {
-  background: linear-gradient(to right, #70a9ff, #0149b4);
+  background: #3334ff;
 }
 .modal form ul li:last-child button svg {
   display: none;
@@ -744,43 +833,6 @@ footer div {
     width: 290px;
   }
   .modal .modal_desktop_menu {
-    display: block;
-  }
-  .modal .modal_desktop_menu ul {
-    display: flex;
-    gap: 7px;
-  }
-  .modal .modal_desktop_menu ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 19px;
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-    padding: 6px 10px;
-    flex: 1;
-    min-height: 20px;
-  }
-  .modal .modal_desktop_menu ul li:first-child {
-    background-color: #2e65f3;
-    color: white;
-  }
-  .modal .modal_desktop_menu ul li span {
-    margin: 0;
-  }
-  .modal .modal_desktop_menu ul li p {
-    margin: 0;
-    display: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal .modal_desktop_menu ul li svg {
-    transform: rotate(0deg);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal .modal_desktop_menu ul li .rotate {
-    transform: rotate(180deg);
-  }
-  .modal .modal_desktop_menu ul li .visible {
     display: block;
   }
   .modal h2 {

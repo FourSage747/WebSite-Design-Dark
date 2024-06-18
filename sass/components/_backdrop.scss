@@ -28,36 +28,139 @@
     ul {
       display: flex;
       li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 19px;
-        padding: 6px 10px;
-        flex: 1;
-        min-height: 20px;
-        background-color: #181a1e;
-        &:first-child {
-          background-color: #2e65f3;
-          color: white;
-        }
-        span {
-          margin: 0;
-        }
-        p {
-          margin: 0;
-          display: none;
-          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        svg {
-          transform: rotate(0deg);
-          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .rotate {
-          transform: rotate(180deg);
-        }
-        .visible {
+        position: relative;
+        b {
           display: block;
+          margin: 0;
+          padding: 6px 10px;
+          box-sizing: border-box;
+        }
+        &:first-child {
+          b {
+            width: 74px;
+          }
+          div {
+            background-color: #2e65f3;
+            color: white;
+          }
+        }
+        &:nth-child(n + 4) {
+          padding: 10px;
+          background-color: #181a1e;
+          border-radius: 19px;
+          span {
+            margin: 0;
+          }
+        }
+        div {
+          width: 100%;
+          box-sizing: border-box;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 19px;
+          padding: 6px 10px;
+          flex: 1;
+          min-height: 20px;
+          background-color: #181a1e;
+          span {
+            margin: 0;
+          }
+          p {
+            text-align: end;
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+            width: 100%;
+            margin: 0;
+          }
+          svg {
+            transform: rotate(0deg);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .rotate {
+            transform: rotate(180deg);
+          }
+          .visible {
+            margin: 5px 0;
+            opacity: 1;
+            max-height: 200px;
+          }
+        }
+      }
+    }
+  }
+  .modal_desktop_menu1 {
+    ul {
+      display: flex;
+      justify-content: start;
+      gap: 10px;
+      li {
+        position: relative;
+        b {
+          display: block;
+          margin: 0;
+          padding: 6px 15px;
+          box-sizing: border-box;
+        }
+        .modal_desktop_menu1_div {
+          width: 100%;
+          box-sizing: border-box;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 19px;
+          padding: 6px 10px;
+          flex: 1;
+          min-height: 20px;
+          background-color: #181a1e;
+          span {
+            margin: 0;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            text-align: end;
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+            width: 100%;
+            margin: 0;
+            p {
+              padding: 5px 3px;
+              @include font(300, 10px);
+              color: #71788c;
+              margin: 0;
+              border-radius: 5px;
+              border: 1px solid #71788c;
+              &:first-child {
+                text-align: start;
+              }
+            }
+          }
+          svg {
+            transform: rotate(0deg);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .rotate {
+            transform: rotate(180deg);
+          }
+          .visible {
+            margin: 5px 0;
+            opacity: 1;
+            max-height: 200px;
+          }
         }
       }
     }

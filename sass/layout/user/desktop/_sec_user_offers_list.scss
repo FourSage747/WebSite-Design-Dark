@@ -64,6 +64,7 @@
           background-color: #0e1218;
           width: 180px;
           border-radius: 10px;
+          overflow: hidden;
           b {
             display: block;
             margin-top: 5px;
@@ -73,20 +74,28 @@
             bottom: 10px;
             right: 10px;
           }
-          &:first-child {
-            border-bottom: 5px solid #423efc;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
           }
-          &:nth-child(2) {
-            border-bottom: 5px solid #f6d423;
+          &:first-child::after {
+            background-color: #423efc;
           }
-          &:nth-child(3) {
-            border-bottom: 5px solid #7c57f4;
+          &:nth-child(2)::after {
+            background-color: #f6d423;
           }
-          &:nth-child(4) {
-            border-bottom: 5px solid #36393e;
+          &:nth-child(3)::after {
+            background-color: #7c57f4;
           }
-          &:last-child {
-            border-bottom: 5px solid #ff7a00;
+          &:nth-child(4)::after {
+            background-color: #36393e;
+          }
+          &:last-child::after {
+            background-color: #ff7a00;
           }
         }
       }

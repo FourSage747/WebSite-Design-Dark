@@ -50,6 +50,15 @@ main {
           border-radius: 20px;
         }
       }
+      div {
+        span {
+          display: block;
+          margin-top: 5px;
+          padding-left: 10px;
+          color: #71788c;
+          @include font(300, 12px);
+        }
+      }
     }
   }
 }

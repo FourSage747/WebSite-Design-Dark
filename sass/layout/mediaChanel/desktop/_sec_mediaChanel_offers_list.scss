@@ -51,6 +51,8 @@
           padding: 7px 20px;
           color: white;
           div {
+            width: 100%;
+            box-sizing: border-box;
             overflow: hidden;
             opacity: 0;
             max-height: 0;
@@ -58,7 +60,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-radius: 10px;
+            border-radius: 20px;
             position: absolute;
             top: -100%;
             padding: 5px;
@@ -70,7 +72,10 @@
               max-height: 1000px;
             }
             span {
-              border-radius: 10px;
+              width: 100%;
+              box-sizing: border-box;
+              text-align: center;
+              border-radius: 20px;
               padding: 5px;
             }
             svg {
@@ -96,15 +101,17 @@
   }
 }
 
-.backdrop {
-  .modal {
-    .modal_desktop_menu {
-      display: none;
-    }
-    form {
-      ul {
-        button {
-          padding: 10px 22px;
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    .modal {
+      .modal_desktop_menu1 {
+        display: none;
+      }
+      form {
+        ul {
+          button {
+            padding: 10px 22px;
+          }
         }
       }
     }
